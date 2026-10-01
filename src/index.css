@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --ink: #070419;
+    --ink-2: #0a0521;
+    --ink-3: #160f39;
+    --cream: #e6e6e1;
+    --cream-warm: #f1e9dd;
+    --accent: #9a92d9;
+    --accent-strong: #8642ff;
+    --depth: #362669;
+    --radius: 0.625rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  background-color: var(--ink);
+  color: var(--cream);
+  font-family: 'Work Sans', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Taviraj', 'Songti SC', serif;
+}
+
+::selection {
+  background: var(--accent-strong);
+  color: #fff;
+}
+
+/* ---------- reveal on scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  filter: blur(6px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform, filter;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+/* ---------- hero glow ---------- */
+.hero-glow {
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 42%, rgba(146, 98, 232, 0.28), transparent 70%),
+    radial-gradient(ellipse 40% 30% at 50% 60%, rgba(134, 66, 255, 0.16), transparent 70%);
+}
+
+.section-glow {
+  background: radial-gradient(ellipse 50% 40% at 80% 10%, rgba(54, 38, 105, 0.35), transparent 70%);
+}
+
+/* ---------- nav glass ---------- */
+.nav-glass {
+  background: rgba(10, 5, 33, 0.45);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(154, 146, 217, 0.14);
+}
+
+/* ---------- outline pill button ---------- */
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 0.65rem 1.6rem;
+  border: 1px solid var(--accent);
+  border-radius: 9999px;
+  color: var(--cream);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+.pill-btn:hover {
+  background: var(--accent-strong);
+  border-color: var(--accent-strong);
+  color: #fff;
+}
+
+/* ---------- timeline ---------- */
+.timeline-track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(154, 146, 217, 0.18);
+}
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--accent-strong), var(--accent));
+  transform-origin: top;
+  transform: scaleY(var(--line-progress, 0));
+}
+.timeline-dot {
+  position: absolute;
+  left: -4px;
+  top: 0.55rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: var(--ink);
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 12px rgba(134, 66, 255, 0.7);
+}
+
+/* ---------- misc ---------- */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0.3rem 1rem;
+  border: 1px solid rgba(154, 146, 217, 0.35);
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  transition: border-color 0.35s ease, color 0.35s ease, background-color 0.35s ease;
+}
+.tag:hover {
+  border-color: var(--accent-strong);
+  color: #fff;
+  background: rgba(134, 66, 255, 0.15);
+}
+
+.hairline {
+  border-color: rgba(154, 146, 217, 0.16);
+}
+
+.logo-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  flex: none;
+  border-radius: 14px;
+  background: rgba(241, 233, 221, 0.96);
+  padding: 8px;
+  box-shadow: 0 0 24px rgba(134, 66, 255, 0.18);
+}
+.logo-chip img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.scroll-hint {
+  animation: hint-drift 2.4s ease-in-out infinite;
+}
+@keyframes hint-drift {
+  0%, 100% { transform: translateY(0); opacity: 0.55; }
+  50% { transform: translateY(10px); opacity: 1; }
+}
