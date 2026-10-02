@@ -34,21 +34,21 @@ function useTimelineProgress() {
 
 const education = [
   {
-    logo: '/assets/ku-leuven.svg',
+    logo: 'cv/assets/ku-leuven.svg',
     period: 'Sep 2023 — Present · final semester',
     title: 'M.Sc. Materials Engineering',
     place: 'KU Leuven, Belgium',
     note: 'SUMA double degree in sustainable materials — #1 university in Belgium, #48 globally.',
   },
   {
-    logo: '/assets/unimib.svg',
+    logo: 'cv/assets/unimib.svg',
     period: 'Sep 2023 — Present · final semester',
     title: 'M.Sc. Materials Science & Nanotechnology',
     place: 'University of Milan-Bicocca, Italy',
     note: 'SUMA double degree in sustainable materials — #10 in Italy, #299 globally.',
   },
   {
-    logo: '/assets/iut.png',
+    logo: 'cv/assets/iut.png',
     period: 'Sep 2018 — Feb 2023',
     title: 'B.Sc. Metallurgy & Materials Engineering',
     place: 'Isfahan University of Technology, Iran',
