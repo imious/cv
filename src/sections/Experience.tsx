@@ -16,7 +16,7 @@ const jobs = [
     body: 'Research, supervision, translation and communication with foreign partners. Named intern of the month.',
   },
   {
-    logo: `${import.meta.env.BASE_URL}assets/libratech.png,
+    logo: `${import.meta.env.BASE_URL}assets/libratech.png`,
     period: '2018 — 2022',
     role: 'Web Developer & UI Designer',
     org: 'Libratech IT Solutions — Isfahan, Iran',
