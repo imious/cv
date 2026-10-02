@@ -9,14 +9,14 @@ const jobs = [
     body: "Three months at Toyota's main European R&D hub, developing a new 3D-printed material. Details under NDA.",
   },
   {
-    logo: '/assets/tamkar.png',
+    logo: `${import.meta.env.BASE_URL}assets/tamkar.png`,
     period: '2022',
     role: 'R&D Intern',
     org: 'Tamkar Industrial Group — Isfahan, Iran',
     body: 'Research, supervision, translation and communication with foreign partners. Named intern of the month.',
   },
   {
-    logo: '/assets/libratech.png',
+    logo: `${import.meta.env.BASE_URL}assets/libratech.png,
     period: '2018 — 2022',
     role: 'Web Developer & UI Designer',
     org: 'Libratech IT Solutions — Isfahan, Iran',
