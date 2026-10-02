@@ -2,21 +2,21 @@ import Reveal from '../components/Reveal'
 
 const jobs = [
   {
-    logo: '/assets/toyota.svg',
+    logo: 'cv/assets/toyota.svg',
     period: '2025',
     role: 'Materials Development Intern',
     org: 'Toyota Motor Europe — Zaventem, Belgium',
     body: "Three months at Toyota's main European R&D hub, developing a new 3D-printed material. Details under NDA.",
   },
   {
-    logo: '/assets/tamkar.png',
+    logo: 'cv/assets/tamkar.png',
     period: '2022',
     role: 'R&D Intern',
     org: 'Tamkar Industrial Group — Isfahan, Iran',
     body: 'Research, supervision, translation and communication with foreign partners. Named intern of the month.',
   },
   {
-    logo: '/assets/libratech.png',
+    logo: 'cv/assets/libratech.png',
     period: '2018 — 2022',
     role: 'Web Developer & UI Designer',
     org: 'Libratech IT Solutions — Isfahan, Iran',
