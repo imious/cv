@@ -5,9 +5,10 @@ import * as THREE from 'three'
 
 // Rest orientation of the scan already faces the camera
 const BASE_ROTATION = 0
+const headModel = `${import.meta.env.BASE_URL}assets/head.glb`
 
 function Bust() {
-  const { scene } = useGLTF('/assets/head.glb')
+  const { scene } = useGLTF(headModel)
   const group = useRef<THREE.Group>(null)
   const pointer = useRef({ x: 0, y: 0 })
   const { viewport } = useThree()
@@ -123,4 +124,4 @@ export default function BustCanvas() {
   )
 }
 
-useGLTF.preload('/assets/head.glb')
+useGLTF.preload(headModel)
