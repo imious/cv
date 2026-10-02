@@ -2,7 +2,7 @@ import Reveal from '../components/Reveal'
 
 const jobs = [
   {
-    logo: '/assets/toyota.svg',
+    logo: '${import.meta.env.BASE_URL}assets/toyota.svg',
     period: '2025',
     role: 'Materials Development Intern',
     org: 'Toyota Motor Europe — Zaventem, Belgium',
