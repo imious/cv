@@ -71,7 +71,7 @@ export default function Hero() {
       {/* Scroll hint */}
       <div className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-2 lg:flex">
         <span className="hint-dot font-mono2 text-[10px] uppercase tracking-[0.3em] text-[#1a1a1a]/45">
-          Scroll — the head spins
+          Scroll — my head spins &#129497;
         </span>
       </div>
     </section>
