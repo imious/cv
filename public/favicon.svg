@@ -6,6 +6,6 @@
       <stop offset="100%" stop-color="#a376f9" />
     </linearGradient>
   </defs>
-  <rect width="64" height="64" rx="14" fill="#0a0521"/>
+  <rect width="64" height="64" rx="14" fill="url(#subtlePurpleBlue)"/>
   <text x="32" y="46" font-family="Arial, serif" font-size="40" fill="url(#subtlePurpleBlue)" text-anchor="middle">IB</text>
 </svg>
