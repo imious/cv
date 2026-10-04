@@ -56,7 +56,7 @@ export default function Hero() {
               <a 
                 href={`mailto:${CONTACT.emails[0]}`} 
                 className="glass-chip flex h-12 items-center rounded-full px-6 text-sm font-semibold text-[#1a1a1a] transition-transform duration-300 hover:scale-[1.04] active:scale-95"
-                style={margin: 0.5rem}
+                style={{margin: '0.5rem'}}
               >
                 Get in touch
               </a>
