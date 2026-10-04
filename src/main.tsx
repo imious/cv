@@ -6,7 +6,7 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/cv3">
+    <BrowserRouter basename="/cv">
       <App />
     </BrowserRouter>
   </StrictMode>,
