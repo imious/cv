@@ -45,7 +45,6 @@ export default function Hero() {
                 href={CV_PDF}
                 download="Iman-Barekatain-CV.pdf"
                 className="flex h-12 items-center gap-2.5 rounded-full bg-indigo-700 px-6 text-sm font-semibold text-white shadow-lg shadow-indigo-700/25 transition-transform duration-300 hover:scale-[1.04] active:scale-95"
-                style="margin: 0.5rem"
                 >
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -57,7 +56,7 @@ export default function Hero() {
               <a 
                 href={`mailto:${CONTACT.emails[0]}`} 
                 className="glass-chip flex h-12 items-center rounded-full px-6 text-sm font-semibold text-[#1a1a1a] transition-transform duration-300 hover:scale-[1.04] active:scale-95"
-                style="margin: 0.5rem"
+                style={margin: 0.5rem}
               >
                 Get in touch
               </a>
